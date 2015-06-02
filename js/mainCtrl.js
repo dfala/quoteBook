@@ -1,6 +1,6 @@
 var app = angular.module('quoteBook');
 
-app.controller('mainCtrl', function ($scope, dataService, cookies) {
+app.controller('mainCtrl', function ($scope, dataService) {
 	$scope.author = prompt('Author?');
 	if (!$scope.author) $scope.author = 'Anonymous';
 
